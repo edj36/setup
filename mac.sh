@@ -19,7 +19,7 @@ if test ! $(which brew); then
 fi
 
 echo "updating homebrew"
-brew update
+brew upgrade && brew update
 
 echo "installing git and setting config"
 brew install git
@@ -32,6 +32,12 @@ brew install jupyter
 brew install ipython
 brew install pandoc
 
+echo "linking python"
+brew link python
+
+echo "installing pip"
+python3 -m pip install --upgrade pip
+
 echo "installing cask to get latex"
 brew tap caskroom/cask
 brew cask install mactex
@@ -42,5 +48,4 @@ brew cask cleanup
 brew cleanup
 
 echo "done"
-
 
