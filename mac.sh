@@ -38,6 +38,15 @@ brew link python
 echo "installing pip"
 python3 -m pip install --upgrade pip
 
+echo "pip install common libraries"
+pip install requests
+pip install pandas
+pip install tqdm
+pip install numpy
+pip install matplotlib
+pip install scikit-learn
+pip install nltk
+
 echo "installing cask to get latex"
 brew tap caskroom/cask
 brew cask install mactex
