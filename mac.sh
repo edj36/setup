@@ -46,6 +46,8 @@ pip install numpy
 pip install matplotlib
 pip install scikit-learn
 pip install nltk
+pip install lxml
+pip install beautifulsoup4
 
 echo "installing cask to get latex"
 brew tap caskroom/cask
