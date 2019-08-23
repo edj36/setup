@@ -48,6 +48,7 @@ pip install scikit-learn
 pip install nltk
 pip install lxml
 pip install beautifulsoup4
+pip install seaborn
 
 echo "installing cask to get latex"
 brew tap caskroom/cask
