@@ -25,6 +25,7 @@ echo "installing git and setting config"
 brew install git
 git config --global user.name edj36
 git config --global user.email edj36@cornell.edu
+git config --global credential.helper osxkeychain
 
 echo "installing tools with homebrew"
 brew install python
